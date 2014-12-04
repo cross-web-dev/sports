@@ -1,0 +1,21 @@
+.wrapper{
+    background-image: url("../img/soccer-field.jpg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: cover;
+    opacity: 1;
+    height: 500px;
+}
+
+/* svg styling*/
+#internal #black_stuff_3_ g{
+    fill: orange;
+}
+
+#shadow {
+    fill: white;
+}
+
+#first-ball{
+    width: 20%;
+}
