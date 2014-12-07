@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sport League</title>
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
     <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
@@ -16,12 +16,25 @@
 
     <div class="container">
         <header class="row">
-            <div class="col-xs-12">
-                <h1>Soccer Sports League</h1>
-            </div>
+            <h1>Soccer Sports League</h1>
         </header>
-<!--
-        <svg id="first-ball" version="1.1" id="ball-layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+
+<!--        Navigation Bar: Columns start at 100% wide on mobile and bump up 50% wide on
+tablets and finally 25% on desktop browsers. -->
+
+    <nav class="row navbar navbar-default top-buffer" role="navigation">
+          <ul class="container nav navbar-nav">
+            <li class="active col-xs-12 col-sm-6 col-md-3"><a href="#">Home</a></li>
+            <li class="col-xs-12 col-sm-6 col-md-3"><a href="#standings">Standings</a></li>
+            <li class="col-xs-12 col-sm-6 col-md-3"><a href="#locations">Locations</a></li>
+            <li class="col-xs-12 col-sm-6 col-md-3"><a href="#sign-up">sign up</a></li>
+          </ul>
+    </nav>
+
+    <article class="row top-buffer">
+        <div class="jumbotron">
+<!--            <img src="img/soccer-field.jpg" id="soccer-field" class="img-responsive" alt="soccer field">-->
+            <svg id="first-ball" version="1.1" id="ball-layer" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
              viewBox="200 -300 4096 4096" enable-background="new 200 -300 4096 4096">
             <g id="ball-object" transform="translate(800,500) rotate(10)">
             <animateMotion
@@ -258,22 +271,21 @@
             <circle id="circumference" fill="url(#circumference_1_)" cx="495" cy="-5" r="381"/>
         </g>
         </svg>
--->
-
-<!--        Navigation Bar: Columns start at 100% wide on mobile and bump up 50% wide on
-tablets and finally 25% on desktop browsers. -->
-        <div class="row top-buffer">
-            <div class="col-xs-12 col-sm-6 col-md-3">.col-xs-12 .col-sm-6 .col-md-3</div>
-            <div class="col-xs-12 col-sm-6 col-md-3">.col-xs-12 .col-sm-6 .col-md-3</div>
-            <div class="col-xs-12 col-sm-6 col-md-3">.col-xs-12 .col-sm-6 .col-md-3</div>
-            <div class="col-xs-12 col-sm-6 col-md-3">.col-xs-12 .col-sm-6 .col-md-3</div>
         </div>
+
 
 <!--        Contents:-->
         <div class="row top-buffer">
-            <div class="col-xs-12 col-sm-6">.col-xs-12 .col-sm-6</div>
-            <div class="col-xs-12 col-sm-6">.col-xs-12 .col-sm-6</div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>Sport</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dolor nisl, porta vitae lacus id, sodales pretium magna. Suspendisse ultricies mollis consequat. Curabitur sit amet orci non dolor imperdiet porta. Donec et magna finibus, consequat eros in, volutpat sem. Curabitur sed pulvinar ex. Integer blandit odio vitae posuere consequat. Pellentesque nibh massa, placerat id ipsum nec, finibus convallis urna. Mauris feugiat tellus tellus, non tempus diam viver</p>
+            </div>
+            <div class="col-xs-12 col-sm-6">
+                <h3>League</h3>
+                <p>Aliquam dictum mollis sapien. Etiam aliquam, felis vitae finibus laoreet, dui mauris ornare lacus, in commodo enim ante eu massa. Sed ligula nibh, mollis semper viverra elementum, vehicula sit amet nulla. Phasellus accumsan congue nulla, et pulvinar tortor ultrices mollis. Nam imperdiet ultrices sem, et ultrices lectus tincidunt eu. In quis lectus at sem feugiat sollicitudin. Phasellus vitae est in odio finibus dapibus et ut risus. Donec tincidunt tellus ac aliquam molestie. Quisque eget molestie dui.</p>
+            </div>
         </div>
+    </article>
     </div> <!--Closing tag for bootstrap container div -->
 
     <footer class="footer">
