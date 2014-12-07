@@ -17,6 +17,13 @@ header,footer{
     margin-top: $top-buffer;
 }
 
+.navbar .nav li{
+    padding-left: 0;
+    padding-right: 0;
+}
+.navbar .container{
+    padding-right: 0;
+}
 /************************** Image styling ************************/
 #soccer-field{
     width: 100%;
