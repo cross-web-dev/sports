@@ -5,10 +5,21 @@
       background-position: top left;
       background-size: cover;
   */
-  /*    height: 500px;*/
-  outline: 1px solid red; }
+  /*    height: 500px;*/ }
 
-/* svg styling*/
+header, footer {
+  background: #eeeeee;
+  background: -moz-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #eeeeee), color-stop(100%, #cccccc));
+  background: -webkit-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background: -o-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background: -ms-linear-gradient(top, #eeeeee 0%, #cccccc 100%);
+  background: linear-gradient(to bottom, #eeeeee 0%, #cccccc 100%); }
+
+.top-buffer {
+  margin-top: 50px; }
+
+/************************** svg styling ************************/
 #internal #black_stuff_3_ g {
   fill: orange; }
 

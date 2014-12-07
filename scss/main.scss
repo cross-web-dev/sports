@@ -1,3 +1,6 @@
+@import "variables";
+@import "mixins";
+
 .container{
 /*
     background-image: url("../img/soccer-field.jpg");
@@ -6,10 +9,17 @@
     background-size: cover;
 */
 /*    height: 500px;*/
-    outline: 1px solid red;
 }
 
-/* svg styling*/
+header,footer{
+    @include getHeadFootBackGroundColor();
+}
+
+.top-buffer{
+    margin-top: $top-buffer;
+}
+
+/************************** svg styling ************************/
 #internal #black_stuff_3_ g{
     fill: orange;
 }
