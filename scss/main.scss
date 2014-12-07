@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "sticky-footer";
 
 .container{
 /*
@@ -14,6 +15,12 @@
 header,footer{
     @include getHeadFootBackGroundColor();
 }
+
+.footer .text-muted {
+  margin: 20px 0;
+}
+@include stickFooter($sticky-footer-height);
+
 
 .top-buffer{
     margin-top: $top-buffer;
