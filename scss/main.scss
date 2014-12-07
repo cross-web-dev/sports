@@ -17,12 +17,27 @@ header,footer{
     margin-top: $top-buffer;
 }
 
+/************************** Navigation Bar Styling ****************/
+.navbar-default{
+    background-color: orange;
+}
+
 .navbar .nav li{
     padding-left: 0;
     padding-right: 0;
+    border-left: 1px solid white;
 }
 .navbar .container{
     padding-right: 0;
+}
+
+.nav a span{
+    padding-right: 10px;
+}
+
+/************************** Font Styling  ***********************/
+header h1{
+    text-align: center;
 }
 /************************** Image styling ************************/
 #soccer-field{
