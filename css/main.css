@@ -111,8 +111,11 @@ fieldset legend {
   color: #FEA604; }
 
 .form-group.required .control-label:after {
-  content: "*";
+  content: " *";
   color: orange; }
+
+button[type="submit"] {
+  width: 40%; }
 
 /********************** Media Queries *******************/
 /* Extra small devices (phones, less than 768px) */
