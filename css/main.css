@@ -30,6 +30,10 @@ body {
 .top-buffer {
   margin-top: 20px; }
 
+.no-padding {
+  padding-left: 0;
+  padding-right: 0; }
+
 /************************** Navigation Bar Styling ****************/
 .navbar-default {
   background: #f9c667;
@@ -41,8 +45,6 @@ body {
   background: linear-gradient(to bottom, #f9c667 0%, #f79621 100%); }
 
 .navbar .nav li {
-  padding-left: 0;
-  padding-right: 0;
   border-left: 1px solid white; }
   .navbar .nav li:first-child {
     border-left: 0; }
@@ -91,5 +93,36 @@ article h3 {
 
 #first-ball {
   width: 20%; }
+
+/********************** Table Styling *******************/
+table caption {
+  color: #356aa0;
+  font-size: 1.2em; }
+
+/********************** Media Queries *******************/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /*remove border left of third item in navbar*/
+  .navbar .nav li:nth-child(3) {
+    border-left: 0px; }
+
+  /* add top border for second row in navbar.*/
+  .navbar .nav li:nth-child(n+3) {
+    border-top: 1px solid white; }
+
+  .tables-container div:nth-child(2) {
+    padding-left: 15px; } }
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  /*revert effect (caused by previous media query) for border left of third item in navbar*/
+  .navbar .nav li:nth-child(3) {
+    border-left: 1px solid white; }
+
+  /* add top border for second row in navbar.*/
+  .navbar .nav li:nth-child(n+3) {
+    border-top: 0; } }
+/* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */
