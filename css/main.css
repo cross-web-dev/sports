@@ -32,22 +32,37 @@ body {
 
 /************************** Navigation Bar Styling ****************/
 .navbar-default {
-  background-color: orange; }
+  background: #f9c667;
+  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
+  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
+  background: linear-gradient(to bottom, #f9c667 0%, #f79621 100%); }
 
 .navbar .nav li {
   padding-left: 0;
   padding-right: 0;
   border-left: 1px solid white; }
+  .navbar .nav li:first-child {
+    border-left: 0; }
+  .navbar .nav li a {
+    color: #356aa0; }
 
 .navbar .container {
   padding-right: 0; }
 
 .nav a span {
+  /*padding between glyph and navigation text*/
   padding-right: 10px; }
 
 /************************** Font Styling  ***********************/
 header h1 {
-  text-align: center; }
+  text-align: center;
+  color: #356aa0; }
+
+article h3 {
+  color: #356aa0; }
 
 /************************** Image styling ************************/
 #soccer-field {
@@ -64,6 +79,9 @@ header h1 {
   background-position: top left;
   background-size: cover;
   height: 75vh; }
+
+.navbar .glyphicon {
+  color: #356aa0; }
 
 #internal #black_stuff_3_ g {
   fill: orange; }

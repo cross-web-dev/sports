@@ -19,25 +19,37 @@ header,footer{
 
 /************************** Navigation Bar Styling ****************/
 .navbar-default{
-    background-color: orange;
+    @include getNavBarBackgroundColor();
 }
 
 .navbar .nav li{
     padding-left: 0;
     padding-right: 0;
     border-left: 1px solid white;
+    &:first-child{
+        border-left: 0;
+    }
+    a{
+        color: $glyphicon-color;
+    }
 }
 .navbar .container{
     padding-right: 0;
 }
 
 .nav a span{
+    /*padding between glyph and navigation text*/
     padding-right: 10px;
 }
 
 /************************** Font Styling  ***********************/
 header h1{
     text-align: center;
+    color: $glyphicon-color;
+}
+
+article h3{
+    color: $glyphicon-color;
 }
 /************************** Image styling ************************/
 #soccer-field{
@@ -55,6 +67,10 @@ header h1{
     background-position: top left;
     background-size: cover;
     height: 75vh;
+}
+
+.navbar .glyphicon{
+    color: $glyphicon-color;
 }
 
 #internal #black_stuff_3_ g{
