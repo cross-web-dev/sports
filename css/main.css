@@ -52,18 +52,14 @@ body {
     color: #356aa0; }
 
 .navbar .container {
-  padding-right: 0; }
-
-.nav a span {
-  /*padding between glyph and navigation text*/
-  padding-right: 10px; }
+  padding-right: 1px; }
 
 /************************** Font Styling  ***********************/
 header h1 {
   text-align: center;
   color: #356aa0; }
 
-article h3 {
+h3, h4 {
   color: #356aa0; }
 
 /************************** Image styling ************************/
@@ -82,8 +78,9 @@ article h3 {
   background-size: cover;
   height: 75vh; }
 
-.navbar .glyphicon {
-  color: #356aa0; }
+.glyphicon {
+  color: #356aa0;
+  padding-right: 10px; }
 
 #internal #black_stuff_3_ g {
   fill: orange; }
@@ -94,10 +91,27 @@ article h3 {
 #first-ball {
   width: 20%; }
 
+#security-code-img {
+  width: 50%;
+  opacity: 0; }
+
 /********************** Table Styling *******************/
 table caption {
   color: #356aa0;
   font-size: 1.2em; }
+
+/********************* Form Styling  *********************/
+#register-form label {
+  color: #356aa0; }
+
+.glyphicon-question-sign {
+  padding-left: 10px; }
+
+.glyphicon-question-sign:hover #security-code-img {
+  opacity: 1; }
+
+fieldset legend {
+  color: #FEA604; }
 
 /********************** Media Queries *******************/
 /* Extra small devices (phones, less than 768px) */
@@ -120,9 +134,13 @@ table caption {
   .navbar .nav li:nth-child(3) {
     border-left: 1px solid white; }
 
-  /* add top border for second row in navbar.*/
+  /* remove top border for second row in navbar.*/
   .navbar .nav li:nth-child(n+3) {
-    border-top: 0; } }
+    border-top: 0; }
+
+  /* remove top buffer that was added to form column for screen-sm-min */
+  #register-form {
+    margin-top: 0; } }
 /* Large devices (large desktops, 1200px and up) */
 
 /*# sourceMappingURL=main.css.map */

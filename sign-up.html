@@ -28,8 +28,86 @@ tablets and finally 25% on desktop browsers. -->
               <li class="col-xs-12 col-sm-6 col-md-3 no-padding"><a href="locations.html"><span class="glyphicon glyphicon-map-marker"></span>Locations</a></li>
               <li class="active col-xs-12 col-sm-6 col-md-3 no-padding"><a href="#"><span class="glyphicon glyphicon-registration-mark"></span>sign up</a></li>
           </ul>
-    </nav>
+        </nav>
 
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-3">
+                <h4><span class="glyphicon glyphicon-info-sign"></span>Before you register</h4>
+                <p>Aliquam dictum mollis sapien. Etiam aliquam, felis vitae finibus laoreet, dui mauris ornare lacus, in commodo enim ante eu massa. Sed ligula nibh, mollis semper viverra elementum, vehicula sit amet nulla. Phasellus accumsan congue nulla, et pulvinar tortor ultrices mollis. Nam imperdiet ultrices sem, et ultrices lectus tincidunt eu. In quis lectus at sem feugiat sollicitudin. Phasellus vitae est in odio finibus dapibus et ut risus. Donec tincidunt tellus ac aliquam molestie. Quisque eget molestie dui.</p>
+                </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-8 col-md-offset-1">
+                <form role="form" name="register" id="register-form" class="top-buffer">
+                  <div class="form-group">
+                    <label for="teamName"><span class="glyphicon glyphicon-user"></span>Team Name</label>
+                      <input type="text" class="form-control" id="teamName" placeholder="Enter name for your team">
+                  </div>
+
+                  <fieldset name="address-info">
+                      <legend>Address Information</legend>
+                      <div class="form-group">
+                        <label for="address"><span class="glyphicon glyphicon-map-marker"></span>Address</label>
+                          <input type="text" class="form-control" id="address" placeholder="Enter club address">
+                      </div>
+                      <div class="form-group">
+                        <label for="city">City</label>
+                        <select class="form-control" id="city">
+                          <option selected>--Select city</option>
+                          <option>Calgary</option>
+                          <option>Montreal</option>
+                          <option>Ottawa</option>
+                          <option>Toronto</option>
+                          <option>Vancouver</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="province">Province</label>
+                        <select class="form-control" id="province">
+                          <option selected>--Select Province</option>
+                          <option>Alberta</option>
+                          <option>Britich Columbia</option>
+                          <option>Ontario</option>
+                          <option>Quebec</option>
+                          <option>Saskatchewan</option>
+                        </select>
+                      </div>
+
+                      <div class="form-group">
+                        <label for="postal-code">Postal Code</label>
+                        <input type="text" id="postal-code">
+                        <p class="help-block">Example: K2M 6T5</p>
+                      </div>
+                  </fieldset>
+
+                  <fieldset name="creadit-card-info">
+                      <legend>Payment Info</legend>
+                      <div class="form-group">
+                        <label for="credit-card-type">Credit Card Type</label>
+                        <select class="form-control" id="credit-card-type">
+                          <option selected>--Select Type</option>
+                          <option>Debit</option>
+                          <option>Visa Debit</option>
+                          <option>Visa</option>
+                        </select>
+                      </div>
+                      <div class="form-group">
+                        <label for="credit-card-number">Credit Card Number</label>
+                        <input type="text" id="credit-card-number">
+                      </div>
+                      <div class="form-group">
+                        <label for="credit-card-name">Name on Credit Card</label>
+                        <input type="text" id="credit-card-name">
+                      </div>
+                      <div class="form-group">
+                        <label for="security-code">Security Code</label>
+                        <input type="password" id="security-code"><span class="glyphicon glyphicon-question-sign"><img id="security-code-img" src="img/cvc-sample.png" alt="security code sample"></span>
+                      </div>
+                 </fieldset>
+                  <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
