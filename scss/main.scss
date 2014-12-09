@@ -155,20 +155,42 @@ fieldset legend{
 }
 
 button[type="submit"]{
-    width: 40%;
+    width: 100%;
+    margin-bottom: 20px;
+    @media screen and (min-width:$screen-sm-min){
+        width: 65%;
+        margin-left: 250px;
+    }
+    @media screen and (min-width:$screen-md-min){
+        width: 65%;
+        margin-left: 244px;
+    }
+    @media screen and (min-width:$screen-lg-min){
+        width: 30%;
+        margin-top: 60px;
+        margin-left: 139px;
+    }
 }
-/********************** Media Queries *******************/
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: $screen-sm-min) {
-    /* Force form groups to align properly.*/
-    .form-inline .form-group{
+.form-inline .form-control{
+    width: 100%;
+}
+
+/* Force form groups to align properly.*/
+.form-inline .form-group{
+    @media (min-width: $screen-sm-min) {
         display: block;
         margin-top: 15px;
     }
+
+    @media (min-width: $screen-lg-min) {
+        display: inline-block;
+        width: 50%;
+    }
 }
+
+/********************** Media Queries *******************/
+
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
@@ -192,10 +214,5 @@ button[type="submit"]{
                 opacity: 1;
             }
         }
-    }
-
-    .form-inline .form-group{
-        display: inline-block;
-        width: 50%;
     }
 }

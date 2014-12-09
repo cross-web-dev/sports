@@ -146,17 +146,36 @@ fieldset legend {
   color: orange; }
 
 button[type="submit"] {
-  width: 40%; }
+  width: 100%;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    button[type="submit"] {
+      width: 65%;
+      margin-left: 250px; } }
+  @media screen and (min-width: 992px) {
+    button[type="submit"] {
+      width: 65%;
+      margin-left: 244px; } }
+  @media screen and (min-width: 1200px) {
+    button[type="submit"] {
+      width: 30%;
+      margin-top: 60px;
+      margin-left: 139px; } }
 
-/********************** Media Queries *******************/
-/* Extra small devices (phones, less than 768px) */
-/* No media query since this is the default in Bootstrap */
-/* Small devices (tablets, 768px and up) */
+.form-inline .form-control {
+  width: 100%; }
+
+/* Force form groups to align properly.*/
 @media (min-width: 768px) {
-  /* Force form groups to align properly.*/
   .form-inline .form-group {
     display: block;
     margin-top: 15px; } }
+@media (min-width: 1200px) {
+  .form-inline .form-group {
+    display: inline-block;
+    width: 50%; } }
+
+/********************** Media Queries *******************/
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /* remove top buffer that was added to form column for screen-sm-min */
@@ -170,10 +189,6 @@ button[type="submit"] {
     .glyphicon.glyphicon-question-sign:hover #security-code-img {
       width: 50%;
       display: inline-block;
-      opacity: 1; }
-
-  .form-inline .form-group {
-    display: inline-block;
-    width: 50%; } }
+      opacity: 1; } }
 
 /*# sourceMappingURL=main.css.map */
