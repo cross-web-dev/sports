@@ -14,21 +14,23 @@
 
 <body>
     <div class="container">
-        <header class="row">
-            <h1>Soccer Sports League</h1>
+        <header>
+            <div class="container">
+                <h1>Soccer Sports League</h1>
+            </div>
         </header>
 
 <!--        Navigation Bar: Columns start at 100% wide on mobile and bump up 50% wide on
 tablets and finally 25% on desktop browsers. -->
 
-        <nav class="row navbar navbar-default top-buffer" role="navigation">
-          <ul class="container nav navbar-nav">
+    <nav class="navbar navbar-default top-buffer" role="navigation">
+          <ul class="nav navbar-nav">
               <li class="col-xs-12 col-sm-6 col-md-3 no-padding"><a href="index.html"><span class="glyphicon glyphicon-home"></span>Home</a></li>
               <li class="col-xs-12 col-sm-6 col-md-3 no-padding"><a href="standings.html"><span class="glyphicon glyphicon-stats"></span>Standings</a></li>
               <li class="col-xs-12 col-sm-6 col-md-3 no-padding"><a href="locations.html"><span class="glyphicon glyphicon-map-marker"></span>Locations</a></li>
-              <li class="active col-xs-12 col-sm-6 col-md-3 no-padding"><a href="#"><span class="glyphicon glyphicon-registration-mark"></span>sign up</a></li>
+              <li class="active col-xs-12 col-sm-6 col-md-3 no-padding"><a href="sign-up.html"><span class="glyphicon glyphicon-registration-mark"></span>sign up</a></li>
           </ul>
-        </nav>
+    </nav>
 
         <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3">
@@ -59,8 +61,11 @@ tablets and finally 25% on desktop browsers. -->
                         <select class="form-control" id="city">
                           <option selected>--Select city</option>
                           <option>Calgary</option>
+                          <option>Edmonton</option>
+                          <option>Halifax</option>
                           <option>Montreal</option>
                           <option>Ottawa</option>
+                          <option>Regina</option>
                           <option>Toronto</option>
                           <option>Vancouver</option>
                         </select>
@@ -74,6 +79,7 @@ tablets and finally 25% on desktop browsers. -->
                           <option selected>--Select Province</option>
                           <option>Alberta</option>
                           <option>Britich Columbia</option>
+                          <option>Nova Scotia</option>
                           <option>Ontario</option>
                           <option>Quebec</option>
                           <option>Saskatchewan</option>
