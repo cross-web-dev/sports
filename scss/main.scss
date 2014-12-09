@@ -20,15 +20,12 @@ header,footer{
 .no-padding{
     padding-left: 0;
     padding-right: 0;
-//    @media (max-width: $screen-sm-min) {
-//        padding-left: 15px;
-//    }
 }
 
 /************************** Navigation Bar Styling ****************/
-//.navbar-default{
-//    @include getNavBarBackgroundColor();
-//}
+.navbar-default{
+    @include getNavBarBackgroundColor();
+}
 
 .navbar-nav{
     width: 100%;
@@ -37,16 +34,38 @@ header,footer{
     }
 }
 
-//.navbar .nav li{
-//    @include getNavBarBackgroundColor();
-//    border-left: 1px solid white;
-//    &:first-child{
-//        border-left: 0;
-//    }
-//    a{
-//        color: $glyphicon-color;
-//    }
-//}
+.navbar-default .navbar-nav>.active>a{
+    background-color: $nav-bar-active-color;
+}
+
+.navbar .nav li{
+    border-bottom: 1px solid white;
+    a:active,
+    a:hover{
+        background-color: $nav-bar-hover-color !important;
+    }
+    &:last-child{
+        border-bottom: 0;
+    }
+
+    @media (min-width: $screen-sm-min) {
+        /*remove bottom border of defualt case for extra small screen.*/
+        &:nth-child(3){
+            border-bottom: 0;
+        }
+        /* Add border right to all list items except 2nd and fourth elements */
+        &:nth-child(2n+1){
+            border-right: 1px solid white;
+        }
+    }
+
+    @media (min-width: $screen-md-min){
+        border-bottom: 0;
+        &:nth-child(2){
+            border-right: 1px solid white;
+        }
+    }
+}
 
 
 /************************** Font Styling  ***********************/
@@ -122,15 +141,6 @@ button[type="submit"]{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-    /*remove border left of third item in navbar*/
-//    .navbar .nav li:nth-child(3){
-//        border-left: 0px;
-//    }
-//    /* add top border for second row in navbar.*/
-//    .navbar .nav li:nth-child(n+3){
-//        border-top: 1px solid white;
-//    }
-
     .tables-container div:nth-child(2){
         padding-left: 15px;
     }
@@ -144,14 +154,6 @@ button[type="submit"]{
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
-    /*revert effect (caused by previous media query) for border left of third item in navbar*/
-//    .navbar .nav li:nth-child(3){
-//        border-left: 1px solid white;
-//    }
-//    /* remove top border for second row in navbar.*/
-//    .navbar .nav li:nth-child(n+3){
-//        border-top: 0;
-//    }
 
     /* remove top buffer that was added to form column for screen-sm-min */
     #register-form{
