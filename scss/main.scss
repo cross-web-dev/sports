@@ -20,25 +20,34 @@ header,footer{
 .no-padding{
     padding-left: 0;
     padding-right: 0;
+//    @media (max-width: $screen-sm-min) {
+//        padding-left: 15px;
+//    }
 }
 
 /************************** Navigation Bar Styling ****************/
-.navbar-default{
-    @include getNavBarBackgroundColor();
+//.navbar-default{
+//    @include getNavBarBackgroundColor();
+//}
+
+.navbar-nav{
+    width: 100%;
+    @media (max-width: $screen-sm-min) {
+        margin: 0;
+    }
 }
 
-.navbar .nav li{
-    border-left: 1px solid white;
-    &:first-child{
-        border-left: 0;
-    }
-    a{
-        color: $glyphicon-color;
-    }
-}
-.navbar .container{
-    padding-right: 1px;
-}
+//.navbar .nav li{
+//    @include getNavBarBackgroundColor();
+//    border-left: 1px solid white;
+//    &:first-child{
+//        border-left: 0;
+//    }
+//    a{
+//        color: $glyphicon-color;
+//    }
+//}
+
 
 /************************** Font Styling  ***********************/
 header h1{
@@ -50,16 +59,7 @@ h3,h4{
     color: $glyphicon-color;
 }
 /************************** Image styling ************************/
-#soccer-field{
-    width: 100%;
-}
-.container .jumbotron{
-    padding: 0;
-}
-
 .jumbotron{
-    padding: 0;
-    margin: 0;
     background-image: url("../img/soccer-field.jpg");
     background-repeat: no-repeat;
     background-position: top left;
@@ -123,13 +123,13 @@ button[type="submit"]{
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
     /*remove border left of third item in navbar*/
-    .navbar .nav li:nth-child(3){
-        border-left: 0px;
-    }
-    /* add top border for second row in navbar.*/
-    .navbar .nav li:nth-child(n+3){
-        border-top: 1px solid white;
-    }
+//    .navbar .nav li:nth-child(3){
+//        border-left: 0px;
+//    }
+//    /* add top border for second row in navbar.*/
+//    .navbar .nav li:nth-child(n+3){
+//        border-top: 1px solid white;
+//    }
 
     .tables-container div:nth-child(2){
         padding-left: 15px;
@@ -145,13 +145,13 @@ button[type="submit"]{
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) {
     /*revert effect (caused by previous media query) for border left of third item in navbar*/
-    .navbar .nav li:nth-child(3){
-        border-left: 1px solid white;
-    }
-    /* remove top border for second row in navbar.*/
-    .navbar .nav li:nth-child(n+3){
-        border-top: 0;
-    }
+//    .navbar .nav li:nth-child(3){
+//        border-left: 1px solid white;
+//    }
+//    /* remove top border for second row in navbar.*/
+//    .navbar .nav li:nth-child(n+3){
+//        border-top: 0;
+//    }
 
     /* remove top buffer that was added to form column for screen-sm-min */
     #register-form{
@@ -162,7 +162,7 @@ button[type="submit"]{
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) {
     .glyphicon.glyphicon-question-sign{
-        display: inline-block;
+        display: inline;
         padding-left: 10px;
 
         &:hover{

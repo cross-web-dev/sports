@@ -35,24 +35,11 @@ body {
   padding-right: 0; }
 
 /************************** Navigation Bar Styling ****************/
-.navbar-default {
-  background: #f9c667;
-  background: -moz-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f9c667), color-stop(100%, #f79621));
-  background: -webkit-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  background: -o-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  background: -ms-linear-gradient(top, #f9c667 0%, #f79621 100%);
-  background: linear-gradient(to bottom, #f9c667 0%, #f79621 100%); }
-
-.navbar .nav li {
-  border-left: 1px solid white; }
-  .navbar .nav li:first-child {
-    border-left: 0; }
-  .navbar .nav li a {
-    color: #356aa0; }
-
-.navbar .container {
-  padding-right: 1px; }
+.navbar-nav {
+  width: 100%; }
+  @media (max-width: 768px) {
+    .navbar-nav {
+      margin: 0; } }
 
 /************************** Font Styling  ***********************/
 header h1 {
@@ -63,15 +50,7 @@ h3, h4 {
   color: #356aa0; }
 
 /************************** Image styling ************************/
-#soccer-field {
-  width: 100%; }
-
-.container .jumbotron {
-  padding: 0; }
-
 .jumbotron {
-  padding: 0;
-  margin: 0;
   background-image: url("../img/soccer-field.jpg");
   background-repeat: no-repeat;
   background-position: top left;
@@ -123,13 +102,6 @@ button[type="submit"] {
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   /*remove border left of third item in navbar*/
-  .navbar .nav li:nth-child(3) {
-    border-left: 0px; }
-
-  /* add top border for second row in navbar.*/
-  .navbar .nav li:nth-child(n+3) {
-    border-top: 1px solid white; }
-
   .tables-container div:nth-child(2) {
     padding-left: 15px; }
 
@@ -140,20 +112,13 @@ button[type="submit"] {
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   /*revert effect (caused by previous media query) for border left of third item in navbar*/
-  .navbar .nav li:nth-child(3) {
-    border-left: 1px solid white; }
-
-  /* remove top border for second row in navbar.*/
-  .navbar .nav li:nth-child(n+3) {
-    border-top: 0; }
-
   /* remove top buffer that was added to form column for screen-sm-min */
   #register-form {
     margin-top: 0; } }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .glyphicon.glyphicon-question-sign {
-    display: inline-block;
+    display: inline;
     padding-left: 10px; }
     .glyphicon.glyphicon-question-sign:hover #security-code-img {
       width: 50%;
