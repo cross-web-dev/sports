@@ -6,3 +6,5 @@ $sticky-footer-height: 60px;
 $glyphicon-color: #356aa0; //#499bea
 $nav-bar-hover-color: #E68A00;
 $nav-bar-active-color: #FFD596;
+$table-header-backgroundcolor: #3796C5;
+$table-odd-rows-backgroundcolor: lighten($table-header-backgroundcolor, 35%);

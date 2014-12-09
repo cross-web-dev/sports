@@ -112,6 +112,12 @@ table caption {
   color: #356aa0;
   font-size: 1.2em; }
 
+.table-striped > tbody > tr:first-child {
+  background-color: #3796C5; }
+
+.table-striped > tbody > tr:nth-child(2n+3) {
+  background-color: #c1dfee; }
+
 /********************* Form Styling  *********************/
 #register-form label {
   color: #356aa0; }
@@ -134,9 +140,6 @@ button[type="submit"] {
 /* No media query since this is the default in Bootstrap */
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
-  .tables-container div:nth-child(2) {
-    padding-left: 15px; }
-
   /* Force form groups to align properly.*/
   .form-inline .form-group {
     display: block;

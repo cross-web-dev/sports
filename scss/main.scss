@@ -114,6 +114,13 @@ table caption{
     font-size: 1.2em;
 }
 
+.table-striped>tbody>tr:first-child{
+    background-color: $table-header-backgroundcolor;
+}
+.table-striped>tbody>tr:nth-child(2n+3){
+    background-color: $table-odd-rows-backgroundcolor;
+}
+
 /********************* Form Styling  *********************/
 #register-form label{
     color: $glyphicon-color;
@@ -141,10 +148,6 @@ button[type="submit"]{
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) {
-    .tables-container div:nth-child(2){
-        padding-left: 15px;
-    }
-
     /* Force form groups to align properly.*/
     .form-inline .form-group{
         display: block;
