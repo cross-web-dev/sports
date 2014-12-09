@@ -79,11 +79,23 @@ h3,h4{
 }
 /************************** Image styling ************************/
 .jumbotron{
-    background-image: url("../img/soccer-field.jpg");
+    background-image: url("../img/screen-xs-img.jpg");
     background-repeat: no-repeat;
     background-position: top left;
     background-size: cover;
-    height: 75vh;
+    min-height: 400px;
+
+    @media screen and (min-width: $screen-sm-min) {
+        background-image: url("../img/screen-sm-img.jpg");
+    }
+
+    @media screen and (min-width: $screen-md-min) {
+    background-image: url("../img/screen-md-img.jpg");
+    }
+
+    @media screen and (min-width: $screen-lg-min) {
+      background-image: url("../img/screen-lg-img.jpg");
+    }
 }
 
 .glyphicon{
