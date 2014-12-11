@@ -3,7 +3,7 @@
 @import "sticky-footer";
 
 
-header,footer{
+header,footer .container{
     @include getHeadFootBackGroundColor();
 }
 
@@ -11,6 +11,12 @@ header,footer{
 .footer .text-muted {
   margin: 20px 0;
 }
+
+.footer{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 @include stickFooter($sticky-footer-height);
 
 .top-buffer{
@@ -20,6 +26,15 @@ header,footer{
 .no-padding{
     padding-left: 0;
     padding-right: 0;
+}
+
+.custom-padding{
+    padding-left: 15px;
+    padding-right: 15px;
+    @media screen and (min-width: $screen-sm-min){
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /************************** Navigation Bar Styling ****************/
